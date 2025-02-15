@@ -1,6 +1,6 @@
 # Corrective RAG (CRAG) using Langchain, Langgraph & OpenAI
 
-Corrective RAG (CRAG) is an innovative strategy for Retrieval-Augmented Generation (RAG) that integrates self-reflection and self-grading mechanisms to enhance the quality of generated responses. By evaluating the relevance of retrieved documents, CRAG dynamically refines the information pipeline to correct or supplement data before generation.
+[Corrective RAG (CRAG)](https://arxiv.org/abs/2401.15884) is an innovative strategy for Retrieval-Augmented Generation (RAG) that integrates self-reflection and self-grading mechanisms to enhance the quality of generated responses. By evaluating the relevance of retrieved documents, CRAG dynamically refines the information pipeline to correct or supplement data before generation.
 
 ---
 
