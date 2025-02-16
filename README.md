@@ -1,4 +1,4 @@
-# Corrective RAG (CRAG) using Langchain, Langgraph & OpenAI
+# Corrective RAG (CRAG) using Langchain, Langgraph & Local LLM
 
 [Corrective RAG (CRAG)](https://arxiv.org/abs/2401.15884) is an innovative strategy for Retrieval-Augmented Generation (RAG) that integrates self-reflection and self-grading mechanisms to enhance the quality of generated responses. By evaluating the relevance of retrieved documents, CRAG dynamically refines the information pipeline to correct or supplement data before generation.
 
@@ -46,7 +46,7 @@ The CRAG pipeline follows these steps:
 3. **Decision Making:**  
    - If at least one document is relevant, proceed to generation.
    - If none are sufficiently relevant, transform the query and perform a web search to obtain additional data.
-4. **Generation:** Use the refined set of documents to generate the final answer with GPT-4O Mini.
+4. **Generation:** Use the refined set of documents to generate the final answer with any Local LLM of your choice, Llama 3 in this tutorial.
 
 A simplified diagram might look like this:
 
@@ -69,7 +69,6 @@ A simplified diagram might look like this:
 
 ### Prerequisites
 
-- **OpenAI API Key:** For accessing GPT-4O Mini.
 - **Tavily API Key:** For enabling web search capabilities.
 - **Python Environment:** Depending on your chosen integration.
 
@@ -90,7 +89,6 @@ pip install -r requirements.txt
 Create a .env file in the root directory with the following variables:
 
 ```bash
-OPENAI_API_KEY=your_openai_api_key
 TAVILY_API_KEY=your_tavily_api_key
 ```
 
