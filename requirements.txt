@@ -1,0 +1,5 @@
+langchain-community>=0.2.11
+langchain-openai
+python-dotenv
+openai
+tavily-python
